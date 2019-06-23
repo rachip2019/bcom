@@ -1,0 +1,7 @@
+<div class="areaChartDiv" >
+    <select class="chartSelect" #areaSelect (change)="onChange(areaSelect.value)" >
+            <option *ngFor="let dep of departments" [value]="dep.id" >{{dep.name}}</option> 
+    </select>
+    <div id="areaChartContainer" >
+</div>
+

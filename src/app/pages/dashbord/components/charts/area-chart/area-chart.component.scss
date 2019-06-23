@@ -1,0 +1,13 @@
+.areaChartDiv{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+}
+#areaChartContainer{
+    width: calc(100% - 50px);
+    height: calc(100% - 25px);
+    right: 0;
+    left: 0;
+    margin: auto;
+}

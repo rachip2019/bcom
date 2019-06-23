@@ -1,0 +1,257 @@
+@import '../../theme/conf';
+.pages-top {
+    position: relative;
+    width: calc(100% - 300px);
+    height: 74px;
+    background: $white;
+    box-shadow: 0 1px 6px -2px #e6e6e6;
+    border: none;
+    margin-right: 300px; 
+}
+
+.avatar-wrap {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: auto;
+    min-height: 50px;
+    cursor: context-menu;
+    @include transition(all .4s);
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        @include transition(all .4s);
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .user-info-wrap {
+        padding: 2px 14px;
+        width: 170px;
+        display: table;
+        height: 50px;
+        @include transition(all .4s);
+    }
+    .user-name,
+    .user-post {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis
+    }
+    .user-name {
+        color: $sidebar-bg;
+        font-size: $lg-text;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .user-post {
+        color: $primary;
+        font-size: $sm-text;
+        margin-top: 5px;
+    }
+}
+
+.collapse-menu {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translate(0, -50%);
+    color: $sidebar-fonts-color;
+    font-size: 24px;
+    cursor: pointer;
+    @include center(40px, 40px);
+    @include transition(all .2s);
+    &:hover {
+        color: $primary;
+    }
+    .toggle-on {
+        transform: rotate(0);
+        @include transition(all .5s);
+    }
+    .toggle-off {
+        transform: rotate(-270deg);
+        @include transition(all .5s);
+    }
+}
+
+.search-group {
+    position: absolute;
+    top: 50%;
+    right: 170px;
+    transform: translate(0, -50%);
+    width: 340px;
+    background: $body-bg;
+    border: 1px solid $body-bg;
+    border-radius: 2px;
+    overflow: hidden;
+    .search-input {
+        width: 300px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: $fonts-color;
+        font-size: $sm-text+2;
+        text-indent: 1.5em;
+        margin-right: 4px;
+        display: inline-block;
+        &:focus {
+            border-bottom: 1px solid $gray-icon; 
+        }
+    }
+    
+    .search-btn {
+        position: relative;
+        top: -1px;
+        right: 2px;
+        width: 30px;
+        height: 30px;
+        background: $primary;
+        border: 0;
+        border-radius: 50%;
+        outline: none;
+        line-height: 30px;
+        text-align: center;
+        color: $gray-icon;
+        //transform: scale(0);
+        transition: all .4s;
+        display: inline-block;
+        &:hover {
+            background: lighten($primary, 10%);
+            //transform: scale(1);
+        }
+    }
+    .search-input:focus+.search-btn {
+        transform: scale(1);
+    }
+}
+.search-group .search-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $fonts-color;
+  }
+  .search-group .search-input ::-moz-placeholder { /* Firefox 19+ */
+    color: $fonts-color;
+  }
+  .search-group .search-input:-ms-input-placeholder { /* IE 10+ */
+    color: $fonts-color;
+  }
+  .search-group .search-input:-moz-placeholder { /* Firefox 18- */
+    color: $fonts-color;
+  }
+
+.msg-tips-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(0, -50%);
+    width: 100px;
+    height: 40px;
+    color: $sidebar-fonts-color;
+    @include transition(all .4s);
+}
+
+.msg-entrance {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    @include transition(all .4s);
+    color: $sidebar-fonts-color;
+    &:hover {
+        cursor: pointer;
+        color: $primary;
+    }
+    span.badge {
+        padding: 0;
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: none;
+        border-radius: 50%;
+        padding-top: 3px;
+        font-size: 10px;
+    }
+    .fa{
+        color: $gray-icon;
+        font-size: 20px;
+    }
+}
+.msg-entrance.ring .badge{
+    background: $green;
+}
+.msg-entrance.email .badge{
+    background: $purple;
+}
+
+@media (max-width:414px) {
+    .avatar-wrap {
+        width: auto;
+        .avatar {
+            border-radius: 50px;
+        }
+        .user-info-wrap {
+            display: none;
+        }
+    }
+    .collapse-menu {
+        left: 100px;
+    }
+    .search-group {
+        display: none;
+    }
+}
+.avatar_icon{
+    float: right;
+    font-size: 23px;
+    color: #A4AFB7; 
+}
+.login_options{
+    position: absolute;
+    left: 30px;
+    top: 75px;
+    width: 240px;
+    border-top: 5px solid #15CB7C;
+    z-index: 9;
+    padding: 0 25px;
+    background-color: white;
+    -moz-box-shadow: 0px 0px 4px #adadad;
+    -webkit-box-shadow: 0px 0px 4px #adadad;
+    box-shadow: 0px 0px 4px #adadad;
+}
+.login_options>div{
+    height: 58px;
+    width: 100%;
+    display: table;
+}
+.login_options>div:last-child{
+    border-top: 1px solid #A4AFB7;
+}
+.login_options>div:last-child>p{
+    color: $purple;
+    font-weight: bold;
+}
+.login_options>div>p{
+    font-size: $lg-text;
+    display: table-cell;
+    vertical-align: middle;
+}
+.login_options>div>p>i{
+    float: left;
+    font-size: 20px;
+}

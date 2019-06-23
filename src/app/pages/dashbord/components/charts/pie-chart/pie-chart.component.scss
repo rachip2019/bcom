@@ -1,0 +1,88 @@
+@import "../../../../../shared/theme/color-schemes/_default.scss";
+#pieChartContainer /deep/ .canvasjs-chart-canvas{
+    right: 0;
+}
+#totalPie{
+    position:absolute;
+    left:0px;
+    top:-22px;
+    height:100%;
+    width:100%;
+    line-height:358px;
+    text-align:center;
+    color: $card-text;
+    font-weight: bold;
+    font-size: 24px;
+}
+#totalPieText{
+    position:absolute;
+    left:0px;
+    top:-2px;
+    height:100%;
+    width:100%;
+    line-height:358px;
+    text-align:center;
+    color: $card-text;
+    font-size:20px;
+}
+#total{
+    font-weight: bold;
+    font-size: 32px;
+}
+#wrapper{
+    height: 100%; 
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+#pieChartContainer{
+    height: calc(100% - 25px);
+    width: 100%;
+}
+.form-inline{
+    position: absolute; 
+    top: 15px;
+    left: 15px;
+    z-index: 9;
+}
+.form-inline.sec-form-inline{
+    top: 57px;
+}
+.sec-form-group{
+    top: 57px;
+}
+.form-control{
+    width: 112px;
+}
+/deep/ ngb-datepicker.dropdown-menu{
+    direction: initial;
+}
+/deep/ .ngb-dp-navigation-select.ng-star-inserted select{
+    direction: ltr;
+}
+/deep/ .btn.btn-outline-secondary.calendar {
+    background-color: white;
+    color: #3e3f42;
+    width: 44px;
+    border: 1px solid #afb7ce;
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/deep/ .btn.btn-outline-secondary.calendar:focus{
+    box-shadow:  none;
+}
+/deep/ .btn.btn-outline-secondary.calendar:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 4px;
+    left: 14px;
+    content: "\f005";
+    content: "";
+}
+.input_date{
+    background-color: white;
+}
+.first-form-date{
+    z-index: 99;
+}

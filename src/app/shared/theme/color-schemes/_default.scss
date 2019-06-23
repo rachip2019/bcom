@@ -1,0 +1,54 @@
+@import '../mixin';
+$default-text:14px;
+$sm-text:12px;
+$lg-text:16px;
+$body-bg:#fff;
+$sidebar-bg:#3A3C47;
+$sidebar-fonts-color:#fff;
+$card-bg:#fff;
+$card-border:#F0F0F7;
+$card-text:#4D4F5C;
+$white:#fff;
+$black:#000;
+$border-color:rgba($black, .1);
+$table-border-color:#CBCBCB;
+$fonts-color:#26253c;
+$primary:white;
+$success:#16be9a;
+$danger:#fa5167;
+$warning:#ff7403;
+$info:#635FCF;
+$active:#635FCF;
+$gray-icon:#BCBCCB;
+$green:#15CB7C;
+$purple:#635FCF;
+$blue:#00C7FF;
+$hard_text:#43425D;
+$backgroud:#F0F0F7;
+body {
+    background: $body-bg;
+}
+
+.bg-default {
+    @include linear-gradient(to top right, darken($card-bg, 40%), darken($card-bg, 30%));
+}
+
+.bg-primary {
+    @include linear-gradient(to top right, $primary, #ffd17c);
+}
+
+.bg-success {
+    @include linear-gradient(to top right, $success, #42e697);
+}
+
+.bg-danger {
+    @include linear-gradient(to top right, $danger, #fda09c);
+}
+
+.bg-warning {
+    @include linear-gradient(to top right, $warning, #fac980);
+}
+
+.bg-info {
+    @include linear-gradient(to top right, $info, #15f8bf);
+}

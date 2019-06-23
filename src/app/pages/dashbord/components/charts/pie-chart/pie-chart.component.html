@@ -1,0 +1,30 @@
+<!-- <div id="pieChartContainer" style="width: 100%; height: 400px;"></div> -->
+<div id="wrapper" >
+    <div id="pieChartContainer" ></div>
+    <div id="totalPie" >{{sum}}</div>
+    <div id="totalPieText" >שיחות</div>
+</div>
+<form class="form-inline form-date first-form-date">
+  <div class="form-group">
+    <div class="input-group">
+      <input class="form-control input_date" placeholder="yyyy-mm-dd"
+             name="dp1" [readonly]="true" [(ngModel)]="start_date" ngbDatepicker #date1 #d1="ngbDatepicker" [maxDate]="maxDate1" [minDate]="minDate1" (ngModelChange)="dateChange(date1.value,date2.value,'start_change')" >
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"></button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<form class="form-inline form-date sec-form-inline">
+    <div class="form-group">
+      <div class="input-group">
+        <input class="form-control input_date" placeholder="yyyy-mm-dd"
+               name="dp2" [readonly]="true" [(ngModel)]="end_date" ngbDatepicker #date2 #d2="ngbDatepicker" [maxDate]="maxDate2" [minDate]="minDate2" (ngModelChange)="dateChange(date1.value,date2.value,'end_change')" >
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+  </form>
+

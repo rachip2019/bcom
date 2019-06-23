@@ -1,0 +1,14 @@
+<div class="card card-block tip-card card_number" [ngStyle]="{'border-top':'6px solid '+color}" >
+    <i class="fa {{icon}} icon_number" [ngStyle]="{'color':color }" aria-hidden="true"></i>
+    <div style="clear:both;" ></div>
+    <div class="row" style="position: relative;" >
+        <!-- <div class="col-sm-8 no-padding-left" >
+          
+        </div>
+        <div class="col-sm-4 no-padding-right" >
+            
+          </div> -->
+        <p class="card_text" [ngStyle]="{'color':color }" >{{data}}</p> 
+        <p class="number_text" >{{title}}</p>
+    </div>
+  </div>
