@@ -1,0 +1,159 @@
+@import "../../../shared/theme/color-schemes/_default.scss";
+table{
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 3px;
+}
+.table_content{
+    background-color: $backgroud; 
+}
+table tbody tr{
+    background-color: $white;
+}
+table tr th{
+    border: none;
+    color: $card-text;
+    font-size: $lg-text+1;
+}
+table tr td{
+    height: 55px;
+    border: 1px solid $table-border-color;
+    font-size: $lg-text+1;
+}
+table tr td.col_table{
+    width: 1%; 
+    white-space: nowrap;
+    padding: 8px 25px;
+}
+table tbody tr td:not(:first-child){
+    border-right: none;
+}
+table tbody tr td:not(:last-child){
+    border-left: none;
+}
+table tr td:nth-child(1),table tr td.edit_col,table tr td.delete_col{
+    width: 70px;
+}
+table tr td:nth-child(2),table tr th:nth-child(2){
+    width: 70px;
+    text-align: right;
+}
+.check-label{
+    width: 23px;
+    height: 23px;
+    margin: 0 auto;
+    background-color: $white;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+.check-label:after{
+    content: '\F00C';
+    background-color: transparent;
+    top: 9px;
+    left: auto;
+    right: -20px;
+}
+.checkbox:not(:checked) + .check-label:after{
+    color: $white;
+}
+.checkbox:checked + .check-label:after{
+    top: 9px;
+    left: auto;
+    right: -20px;
+}
+table td.edit_col i , table td.delete_col i{
+    font-size: 25px;
+    color: $card-text;
+}
+.right{
+    text-align: right;
+    padding-right: 25px;
+}
+.left{
+    float: left;
+}
+.table-pagination ::ng-deep .ngx-pagination .ngx-pagination li{
+    color: $card-text;
+}
+.table-pagination ::ng-deep .ngx-pagination li:not(:first-child):not(:last-child){
+    padding: 6px;
+}
+.table-pagination ::ng-deep .ngx-pagination li{ 
+    width: 35px;
+    height: 35px;
+    background: $white;
+    border: 1px solid #E8E9EC;
+    float: right;
+    list-style: outside none none;
+    margin-right: 7px;
+    border-radius: 3px;
+}
+.table-pagination ::ng-deep .ngx-pagination a, .ngx-pagination button,.table-pagination ::ng-deep .ngx-pagination .current{
+    color: $card-text;
+}
+.table-pagination ::ng-deep .ngx-pagination .current{
+    padding: 8px 14px !important;
+    border: 1px solid #001877;
+    color: #001877 !important;
+    font-weight: 700;
+}
+.table-pagination ::ng-deep .ngx-pagination .current,.table-pagination ::ng-deep .ngx-pagination li.disabled{
+    background: #ffffff94;  
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-previous a::before, .table-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled::before{
+    content: "\F105";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 26px;
+    margin-right: -4px;
+    margin-left: 3px;
+    color: #808495;
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-next a::after, .table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled::after{
+    content: "\F104";
+    font: normal normal normal 14px/1 FontAwesome; 
+    color: #808495;
+    font-size: 26px;
+    margin-right: 3px;
+    margin-top: -95px;
+    display: block !important;
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-previous a,.table-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled a,.table-pagination ::ng-deep .ngx-pagination .pagination-previous,.table-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled{
+    color: transparent;
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-next a,.table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled a,.table-pagination ::ng-deep .ngx-pagination .pagination-next,.table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled{
+    color: transparent;
+}
+.form-group.pages,.form-group.options.pages{
+    display: inline-block;
+    float: right;
+}
+.form-group.options.pages .select_page{
+    background-color: $white;
+    height: 35px;
+    background-image: none;
+}
+.select_page_arrow{
+    background-color: $white;
+    border: none;
+}
+.select_page_arrow>i{
+    font-size: 19px;
+    margin-top: 7px;
+    padding-right: 7px;
+}
+.form-group.options.pages .input-group-sm{
+    border: 1px solid #E8E9EC;
+    border-radius: 3px;
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-previous a:hover, .table-pagination ::ng-deep .ngx-pagination .pagination-previous button:hover{
+    height: 35px;
+}
+.table-pagination ::ng-deep .ngx-pagination .pagination-next a:hover, .table-pagination ::ng-deep .ngx-pagination .pagination-next button:hover{
+    height: 35px;
+}
+.table-pagination ::ng-deep ul.ngx-pagination li:not(:first-child):not(:last-child) a{
+    padding: 1px 6px;
+    color: #808495;
+}
+.table-pagination ::ng-deep ul.ngx-pagination li:not(:first-child):not(:last-child) span{
+    padding: 0;
+}

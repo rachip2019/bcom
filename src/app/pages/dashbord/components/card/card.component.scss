@@ -1,0 +1,53 @@
+@import "../../../../shared/theme/color-schemes/_default.scss";
+.card{
+    padding: 0;
+    padding: 0 15px !important;
+    color: $card-text;
+}
+.card:first-child{
+    margin-top: 24px;
+}
+.card_title{
+    text-align: center;
+    background: $card-border;
+    height: 36px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: $lg-text+4;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 16px;
+}
+.col-card{
+    display: inline-block;
+}
+.col-card:nth-child(2){
+    margin-right: 20px;
+}
+.card div p:not(:first-child){
+    color: $card-text;
+    font-size: $lg-text+2;
+}
+.col-margin{
+    margin: 10px 0 10px;
+}
+.card .row:last-child{
+    border-top: 1px solid $card-border; 
+    margin-bottom: 20px;
+}
+.card_arrow{
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.first_card_row{
+    height: calc(25% - 52px);
+    display: inline-block;
+    flex-wrap: initial;
+    width: 100%;
+}

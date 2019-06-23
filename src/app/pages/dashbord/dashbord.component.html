@@ -1,0 +1,61 @@
+<div class="dashbord_page" >
+    <div class="col-sm-4 col-dashbord" style="height: 100%;" >
+        <app-card *ngFor="let depart of departments" [title]="depart.name" [waiting_time_avg]="depart.data.waiting_time_avg" [pending_number]="depart.data.pending_number" [active_calls]="depart.data.active_calls" [call_time_avg]="depart.data.call_time_avg" [maximum_waiting_time]="depart.data.maximum_waiting_time" ></app-card>
+    </div>
+    <div class="col-sm-8" style="height: 100%;" >
+        <div class="row" style="height: 80%;" >
+            <div class="col-sm-5" style="height: calc(50% - 30px);" >
+                <pie-chart *ngIf="dashbordData.call_data" [callData]="dashbordData.call_data" ></pie-chart>
+            </div>
+            <div class="col-sm-7" style="height: calc(50% - 30px);" >
+                <bar-chart *ngIf="dashbordData.call_distribution" [call_distribution]="dashbordData.call_distribution" [departments]="departments" ></bar-chart>
+            </div>
+            <div class="col-sm-12 col-area-chart" style="height: calc(50% - 30px);" >
+                <areaChart *ngIf="dashbordData.pending_avg" [pending_avg]="dashbordData.pending_avg" [departments]="departments" ></areaChart>
+            </div>
+        </div>
+        <div class="row" style="height: 20%;" >
+            <div class="col-sm-5" style="height: 100%;" >
+                <app-card-number [color]="'#15CB7C'" [icon]="'fa-clock-o'" [data]="dashbordData.call_time_avg" [title]="'ממוצע זמן שיחה'" ></app-card-number>
+            </div>
+            <div class="col-sm-7 no-padding" style="height: 100%;" >
+                <div class="col-sm-6" style="height: 100%;" >
+                    <app-card-number [color]="'#635FCF'" [icon]="'fa-hourglass-half'" [data]="dashbordData.pending_calls" [title]="'שיחות ממתינות'" ></app-card-number>
+                </div>
+                <div class="col-sm-6" style="height: 100%;" >
+                    <app-card-number [color]="'#00C7FF'" [icon]="'fa-volume-control-phone'" [data]="dashbordData.active_calls" [title]="'שיחות פעילות'" ></app-card-number>
+                </div>
+            </div>
+        </div>     
+    </div>
+    
+    <!-- <div class="col-sm-12" >
+            <div style="display: block">
+                <canvas mdbChart
+                    [chartType]="chartType1"
+                    [datasets]="chartDatasets1"
+                    [labels]="chartLabels1"
+                    [colors]="chartColors1"
+                    [options]="chartOptions1"
+                    [legend]="true"
+                    (chartHover)="chartHovered1($event)"
+                    (chartClick)="chartClicked1($event)">
+                </canvas>
+            </div>
+    </div> -->
+    
+    <!-- <div class="col-sm-4" >
+        <div style="display: block">
+            <canvas mdbChart
+                [chartType]="chartType"
+                [datasets]="chartDatasets"
+                [labels]="chartLabels"
+                [colors]="chartColors"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+            </canvas>
+            </div>
+    </div> -->
+</div>

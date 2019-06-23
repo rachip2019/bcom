@@ -1,0 +1,6 @@
+<div class="barChartDiv" >
+    <select class="chartSelect" #barSelect (change)="onChange(barSelect.value)" >
+        <option *ngFor="let depar of departments" [value]="depar.id" >{{depar.name}}</option> 
+    </select>
+    <div id="barChartContainer" ></div>
+</div>

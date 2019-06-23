@@ -1,0 +1,31 @@
+<div class="card card-block tip-card">
+  <p class="card_title" >{{title}}</p>
+  <div class="row first_card_row" >
+      <div class="col-sm-6 col-margin center" >
+          <p class="card_text green-color" >{{waiting_time_avg}}</p>
+          <p>ממוצע זמן המתנה</p>
+        </div>
+        <div class="col-sm-6 col-margin center" >
+            <div class="col-card center" >
+              <p class="card_text purple-color" >{{pending_number}}</p>
+              <p>ממתינים</p>
+            </div>
+            <div class="col-card center" >
+                <p class="card_text blue-color" >{{active_calls}}</p>
+                <p>בשיחה</p>
+              </div>
+        </div>
+  </div>
+  <div class="row" *ngIf="showTimes" >
+      <div class="col-sm-6 col-margin center" >
+          <p class="card_text" >{{call_time_avg}}</p>
+          <p>ממוצע זמן שיחה</p>
+        </div>
+        <div class="col-sm-6 col-margin center" >
+            <p class="card_text" >{{maximum_waiting_time}}</p>
+            <p>זמן המתנה מירבי</p>
+          </div>
+  </div>
+  <i class="fa fa-angle-up card_arrow" *ngIf="!showTimes"  (click)="showTimes=true" aria-hidden="true"></i>
+  <i class="fa fa-angle-down card_arrow" *ngIf="showTimes" (click)="showTimes=false" aria-hidden="true"></i>
+</div>
