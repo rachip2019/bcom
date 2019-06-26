@@ -1,6 +1,10 @@
 <div class="card animated fadeIn">
   <div class="card-header" *ngIf="cardTitle">
+<<<<<<< HEAD
     <h4 class="card-title">{{cardTitle}} <span>{{cardSubTitle}}</span></h4>
+=======
+    <h4 class="card-title">{{cardTitle}}</h4>
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     <div class="btn-group" *ngIf="cardTitle&&isCollapse">
       <button class="collapse-btn" (click)="collapseCard()">
         <i class="fa fa-minus fa-fw" [ngClass]="{'collapse-on':collapse === 'on','collapse-off':collapse === 'off'}"></i>

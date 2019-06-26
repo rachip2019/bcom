@@ -43,8 +43,11 @@ body {
 
 .bg-info {
     @include linear-gradient(to top right, $info, #04f7fb);
+<<<<<<< HEAD
 }
 
 .bg-green {
     @include linear-gradient(to top right, $info, #15CB7C);
+=======
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }

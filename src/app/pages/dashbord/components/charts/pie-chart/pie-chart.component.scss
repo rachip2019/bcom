@@ -52,8 +52,12 @@
     top: 57px;
 }
 .form-control{
+<<<<<<< HEAD
     width: 99px;
     padding: 0 10px;
+=======
+    width: 112px;
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
 /deep/ ngb-datepicker.dropdown-menu{
     direction: initial;
@@ -64,8 +68,12 @@
 /deep/ .btn.btn-outline-secondary.calendar {
     background-color: white;
     color: #3e3f42;
+<<<<<<< HEAD
     width: 32px;
     padding: 0;
+=======
+    width: 44px;
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     border: 1px solid #afb7ce;
     border-radius: .25rem;
     border-top-right-radius: 0;
@@ -78,7 +86,11 @@
     position: absolute;
     font-family: 'FontAwesome';
     top: 4px;
+<<<<<<< HEAD
     left: 8px;
+=======
+    left: 14px;
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     content: "\f005";
     content: "";
 }

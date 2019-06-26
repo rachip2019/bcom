@@ -1,4 +1,6 @@
+
 import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-table',
@@ -24,6 +26,7 @@ export class TableComponent implements OnInit {
     this.tableData = this._tablesDataService.DATA;
     this.tableColumns = this._tablesDataService.COLUMNS;
   }*/
+
 
   pageChanged(pN: number): void {
     this.pageNumber = pN;

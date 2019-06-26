@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .abs_login{
     position: absolute;
     top: 0;
@@ -57,4 +58,47 @@ input.form-control:-moz-placeholder { /* Firefox 18- */
     letter-spacing: 2px;
     box-shadow: none;
     height: 40px;
+=======
+@import '../../shared/theme/conf';
+.login-card {
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    .form-group {
+        padding: 0;
+    }
+    .form-label {
+        display: block;
+        color: $fonts-color;
+        padding: 0 10px;
+    }
+    span.form-label {
+        color: lighten($fonts-color, 30%);
+    }
+    .input-group {
+        padding: 0;
+        margin: 25px 0;
+    }
+    .form-control {
+        background: transparent;
+        color: $fonts-color;
+    }
+    .input-group-addon {
+        background: transparent;
+        border: none;
+        font-size: $lg-text;
+        color: lighten($fonts-color, 20%);
+    }
+    .btn {
+        width: 100%;
+    }
+    .btn-link {
+        margin: 10px 0;
+        color: lighten($fonts-color, 30%);
+    }
+>>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
