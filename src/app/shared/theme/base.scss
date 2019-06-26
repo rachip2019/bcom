@@ -44,3 +44,26 @@ div {
 .center{
     text-align: center;
 }
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.input-group-addon{
+    width: 42px;
+    text-align: center;
+}
+.base_select{
+    background-color: transparent;
+    border: 1px solid #A4AFB7;
+    border-radius: 4px;
+    height: 35px;
+    padding: 5px 10px;
+    color: #43425D;
+}
+.form_line{
+    height: 0.5px;
+    margin: 0 15px 25px;
+    background-color: #CBCBCB;
+}

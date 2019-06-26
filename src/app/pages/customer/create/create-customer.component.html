@@ -1,0 +1,141 @@
+<div class="row row_tabs" >
+  <div class="col-sm-12" >
+      <card cardTitle="חברות" cardSubTitle=" > הוסף חברה" >
+        <tabset id="tab1">
+          <tab-content for="tab1" tabTitle="פרטי חברה" [done]="true" >
+            <div class="row" >
+                <div class="col-sm-4" >
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">שם חברה</label>
+                       <input class="form-control" placeholder="מכירות" type="text">
+                    </div>
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">ח.פ / ע.מ</label>
+                       <input class="form-control" placeholder="שוהם" type="text">
+                    </div>
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">כתובת</label>
+                       <input class="form-control" placeholder="שוהם" type="text">
+                    </div>
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">עיר</label>
+                       <input class="form-control" placeholder="שוהם" type="text">
+                    </div>
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">מיקוד</label>
+                       <select class="form-control" >
+                         <option>בחר</option>
+                       </select>
+                    </div>
+                    <div class="form-group col-sm-6" >
+                       <label class="control-label">טלפון</label>
+                       <select class="form-control" >
+                           <option>בחר</option>
+                         </select>
+                    </div>
+                  </div>
+            </div>
+            <div class="row" >
+              <div class="col-sm-6 col-border-top" >
+                  <h1 class="form_line" ></h1>
+                  <div class="form-group col-sm-4" >
+                      <label class="control-label">איש קשר</label>
+                      <select class="form-control" >
+                          <option>בחר</option>
+                        </select>
+                  </div>
+                  <div class="form-group col-sm-4" >
+                      <label class="control-label">טלפון</label>
+                      <input class="form-control" placeholder="" type="text">
+                  </div>
+                  <div class="form-group col-sm-4" >
+                      <label class="control-label">דוא"ל</label>
+                      <input class="form-control" placeholder="" type="text">
+                  </div>
+              </div>
+           </div>
+           <button class="btn btn-info tab_btn" >המשך</button>
+          </tab-content>
+          <tab-content for="tab1" tabTitle="פרטי מרכזיה" >
+              <div class="row" >
+                  <div class="col-sm-4" >
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">IP כתובת</label>
+                         <input class="form-control" placeholder="מכירות" type="text">
+                      </div>
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">PORT</label>
+                         <input class="form-control" placeholder="שוהם" type="text">
+                      </div>
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">שם משתמש</label>
+                         <input class="form-control" placeholder="שוהם" type="text">
+                      </div>
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">ספק</label>
+                         <input class="form-control" placeholder="שוהם" type="text">
+                      </div>
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">Secret</label>
+                         <select class="form-control" >
+                           <option>בחר</option>
+                         </select>
+                      </div>
+                      <div class="form-group col-sm-6" >
+                         <label class="control-label">מנהל</label>
+                         <select class="form-control" >
+                             <option>בחר</option>
+                           </select>
+                      </div>
+                      <div class="form-group col-sm-6" >
+                          <label class="control-label">cdr</label>
+                          <select class="form-control" >
+                              <option>בחר</option>
+                            </select>
+                       </div>
+                       <div class="form-group col-sm-6" >
+                          <label class="control-label">ami_port</label>
+                          <select class="form-control" >
+                              <option>בחר</option>
+                            </select>
+                       </div>
+                       <div class="form-group col-sm-6" >
+                          <label class="control-label">ami_user</label>
+                          <select class="form-control" >
+                              <option>בחר</option>
+                            </select>
+                       </div>
+                       <div class="form-group col-sm-6" >
+                          <label class="control-label">ami_pass</label>
+                          <select class="form-control" >
+                              <option>בחר</option>
+                            </select>
+                       </div>
+                    </div>
+              </div>
+              <button class="btn btn-info tab_btn" >המשך</button>
+              <button class="btn btn-green tab_btn sec_tab_btn" ><i class="fa fa-angle-right" aria-hidden="true"></i>הקודם</button> 
+          </tab-content>
+          <tab-content for="tab1" tabTitle="שלוחות" [active]="true" >
+              <div class="form-group col-sm-2 form-group-extension" >
+                  <label class="control-label">טווח שלוחות</label>
+                  <div class="extension_div" >
+                      <input class="form-control extension_input" placeholder="" type="text">
+                      <span class="extension_line" ></span>
+                      <input class="form-control extension_input" placeholder="" type="text">
+                  </div>
+              </div>
+              <div class="col-sm-2" >
+                  <button class="btn btn-green add_btn" > הוסף טווח <i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+              <div class="col-sm-2" >
+                  <button class="btn btn-green add_btn" > הוסף שלוחה <i class="fa fa-plus" aria-hidden="true"></i></button>
+              </div>
+              <button class="btn btn-info tab_btn" >סיום</button>
+              <button class="btn btn-green tab_btn sec_tab_btn" ><i class="fa fa-angle-right" aria-hidden="true"></i>הקודם 
+              </button> 
+          </tab-content>
+        </tabset>
+      </card>
+  </div>
+</div>

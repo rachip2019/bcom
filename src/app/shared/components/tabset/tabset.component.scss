@@ -16,6 +16,7 @@
     min-width: 70px;
     outline: none;
     color: $fonts-color;
+    flex: 1;
     @include center(auto, 40px);
     &::after {
         display: block;
@@ -44,10 +45,26 @@
     color: rgba($fonts-color, .4);
     cursor: not-allowed;
 }
-
+.tabs-header button{
+    border: none !important;
+    font-weight: bold;
+    color: $card-text;
+    text-align: right;
+    padding-right: 15px;
+}
+.tabs-header button:not(:first-child){
+    border-right: 1px solid white !important;
+}
+.tabs-header button:not(:last-child){
+    border-left: 1px solid white !important;
+}
 .tabs-wrap-default {
+    height: 100%;
     .tabs-header {
         border: none;
+    }
+    .tabs-nav{
+        background-color: #E2E2E2;
     }
     .tabs-nav,
     .active {
@@ -61,10 +78,24 @@
         border-radius: 5px 5px 0 0;
         border: 1px solid $border-color;
         border-bottom: 1px solid $card-bg;
-        color: $primary;
+        background-color: white;
+    }
+    .done{
+        border-bottom: 6px solid $green !important;
+        line-height: 32px;
+    }
+    .done:before{
+        content: "";
+        font: normal normal normal 14px/1 FontAwesome;
+        color: #15cb7c;
+        float: left;
+        font-size: 23px;
+        margin: 6px 15px;
     }
     .tabs-body {
-        border: 1px solid $border-color;
+        border: 1px solid $table-border-color;
+        height: calc(100% - 41px);
+        background-color: white;
     }
 }
 

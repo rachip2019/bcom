@@ -18,6 +18,9 @@ export class TabContentComponent implements OnInit {
   active: boolean = false;
 
   @Input()
+  done: boolean = false;
+
+  @Input()
   disabled: boolean = false;
 
   tabsMenu: TabMenuModel;
@@ -55,6 +58,7 @@ export class TabContentComponent implements OnInit {
       for: this.for,
       text: this.tabTitle,
       active: this.active,
+      done: this.done,
       disabled: this.disabled
     }
     //this._globalService._tabsMenu(this.tabsMenu);

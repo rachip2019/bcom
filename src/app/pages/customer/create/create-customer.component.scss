@@ -1,0 +1,40 @@
+.row_tabs,/deep/ .card-content,/deep/ .content-wrap,/deep/ .card{
+    height: 100% !important;
+}
+/deep/ .card{
+    margin-bottom: 0;
+    border: none;
+}
+.col-border-top{
+    margin-top: 40px;
+}
+.sec_tab_btn{
+    left: 195px;
+    width: auto;
+    padding: 0 20px;
+}
+.sec_tab_btn>i{
+    margin-left: 15px;
+}
+.extension_div{
+    display: flex;
+    align-items: center;
+}
+.extension_line{
+    height: 1px;
+    background-color: #A4AFB7;
+    width: 10%;
+}
+.form-group-extension{
+    margin-left: 83.33333333%;
+    margin-right: 0;
+}
+.add_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.add_btn>i{
+    margin-right: auto;
+}

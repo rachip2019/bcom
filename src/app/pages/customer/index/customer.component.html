@@ -1,0 +1,13 @@
+<div class="card-header header-table" >
+    <h4 class="card-title" >לקוחות (08)</h4>
+    <button class="btn btn-green left" >יצוא<i class="fa fa-external-link" aria-hidden="true"></i></button>
+    <button class="btn btn-green left" >הדפס <i class="fa fa-print" aria-hidden="true"></i></button>
+    <div class="input-group" >
+        <input placeholder="חיפוש..." class="form-control right" >
+        <span _ngcontent-ysy-c6="" class="input-group-addon addon-left" id="username"><i _ngcontent-ysy-c6="" class="fa fa-user fa-fw"></i></span>
+    </div>
+    <select class="base_select right" >
+        <option>סינון לפי</option>
+    </select>
+</div>
+<app-table *ngIf="columns&&data" [tableColumns]="columns" [tableData]="data" [title]="title" [createBtn]="createBtn" ></app-table>

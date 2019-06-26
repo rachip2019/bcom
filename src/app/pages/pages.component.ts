@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pages',
@@ -6,4 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./pages.component.scss']
 })
 
-export class PagesComponent { }
+export class PagesComponent {
+  urlNoMenu:Array<string> = [];
+  constructor(public router: Router) {
+
+  }
+
+  ngOnInit() {
+    this.urlNoMenu = [
+      '/pages/login',
+      '/pages/dashbordTV'
+    ];
+  }
+}

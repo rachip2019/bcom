@@ -16,7 +16,7 @@
     font-size: $lg-text+4;
     margin-right: -15px;
     margin-left: -15px;
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
 .col-card{
     display: inline-block;
@@ -27,6 +27,7 @@
 .card div p:not(:first-child){
     color: $card-text;
     font-size: $lg-text+2;
+    margin: 3px;
 }
 .col-margin{
     margin: 10px 0 10px;

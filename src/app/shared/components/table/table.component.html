@@ -1,6 +1,6 @@
 <div class="row table_content">
     <div class="col-md-12">
-      <card cardTitle="מחלקות (4)">
+      <card>
         <table class="table table-bordered table-hover"> 
           <thead>
             <tr>
@@ -9,7 +9,8 @@
                 <label class="check-label" for="checkbox"></label>
               </th>
               <th>#</th>
-              <th *ngFor="let col of tableColumns;last as isLast" [ngClass]="{'col_table' : !isLast,'right' : isLast}" >{{col}}</th>
+              <th *ngFor="let col of tableColumns;last as isLast" [ngClass]="{'col_table' : !isLast,'col_table_right' : isLast}" >{{col}}</th>
+              <th></th>
               <th>ערוך</th>
               <th>מחק</th>
             </tr>
@@ -20,7 +21,10 @@
                   <input class="checkbox" type="checkbox" id="checkbox{{index}}" >
                   <label class="check-label" for="checkbox{{index}}"></label>
               </td>
-              <td *ngFor='let attr of item | arrFromJson;last as isLast' [ngClass]="{'col_table' : !isLast,'right' : isLast}" >{{attr.value}}</td>
+              <td *ngFor='let attr of item | arrFromJson;last as isLast' [ngClass]="{'col_table' : !isLast,'col_table_right' : isLast}" >{{attr.value}}</td>
+              <td>
+                <button class="btn whiteBtn" >כניסה למערכת</button>
+              </td>
               <td class="edit_col" >
                   <i class="fa fa-pencil" aria-hidden="true"></i>
               </td>
@@ -30,31 +34,33 @@
             </tr>
           </tbody>
         </table>
-        <form class="pagination-wrapper">
-          <div class="form-group pages">
-            <pagination-controls class="table-pagination" id="pager" (pageChange)="pageChanged($event)" maxSize="9" directionLinks="true"
-              autoHide="true" previousLabel="Prev" nextLabel="Next" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
-              screenReaderCurrentLabel="You're on page">
-            </pagination-controls>
-          </div>
-          <div class="form-group options pages">
-            <div class="input-group input-group-sm">
-              <span class="input-group-addon addon-right select_page_arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-              <select class="form-control select_page" name="pageChangedName" [(ngModel)]="pageNumber" (ngModelChange)="loadData()">
-                <option value="1" >page / 1</option>
-                <option value="2">page / 2</option>
-                <!-- <option>10</option>
-                <option>20</option>
-                <option>50</option>
-                <option>100</option>
-                <option>200</option> -->
-              </select>
-            </div>
-          </div>
-        </form>
-        <div class="btn-wrap division left">
-          <button type="button" class="btn btn-info btn-with-icon">
-            מחלקה חדשה <i class="fa fa-plus fa-fw"></i></button>
+        <div class="bottom_table" >
+            <form class="pagination-wrapper">
+                <div class="form-group pages">
+                  <pagination-controls class="table-pagination" id="pager" (pageChange)="pageChanged($event)" maxSize="9" directionLinks="true"
+                    autoHide="true" previousLabel="" nextLabel="" screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page"
+                    screenReaderCurrentLabel="You're on page">
+                  </pagination-controls>
+                </div>
+                <div class="form-group options pages">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon addon-right select_page_arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <select class="form-control select_page" name="pageChangedName" [(ngModel)]="pageNumber" (ngModelChange)="loadData()">
+                      <option value="1" >1 / page</option>
+                      <option value="2">2 / page</option>
+                      <!-- <option>10</option>
+                      <option>20</option>
+                      <option>50</option>
+                      <option>100</option>
+                      <option>200</option> -->
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="btn-wrap division left">
+                <button type="button" class="btn btn-info btn-with-icon create_btn">
+                  {{createBtn}} <i class="fa fa-plus fa-fw"></i></button>
+              </div>
         </div>
       </card>
     </div>

@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 
 /* components */
 import { PagesComponent } from './pages.component';
+import { LoginBaseComponent } from './login_base/login_base.component';
 import { LoginComponent } from './login/login.component';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { CardComponent } from './dashbord/components/card/card.component';
@@ -23,6 +24,10 @@ import { AreaChartComponent } from './dashbord/components/charts/area-chart/area
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { CustomerComponent } from './customer/index/customer.component';
+import { CreateCustomerComponent } from './customer/create/create-customer.component';
+import { DashbordTvComponent } from './dashbord-tv/dashbord-tv.component';
+
 
 //import * as CanvasJS from './../../assets/js/canvasjs.min.js';
 
@@ -42,6 +47,7 @@ import { FormsModule } from '@angular/forms';
     ],
     declarations: [
         PagesComponent,
+        LoginBaseComponent,
         LoginComponent,
         DashbordComponent,
         CardComponent,
@@ -51,6 +57,9 @@ import { FormsModule } from '@angular/forms';
         PieChartComponent,
         BarChartComponent,
         AreaChartComponent,
+        CustomerComponent,
+        CreateCustomerComponent,
+        DashbordTvComponent,
     ],
     bootstrap: [PagesComponent]
 })

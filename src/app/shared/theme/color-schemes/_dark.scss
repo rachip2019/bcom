@@ -44,3 +44,7 @@ body {
 .bg-info {
     @include linear-gradient(to top right, $info, #04f7fb);
 }
+
+.bg-green {
+    @include linear-gradient(to top right, $info, #15CB7C);
+}

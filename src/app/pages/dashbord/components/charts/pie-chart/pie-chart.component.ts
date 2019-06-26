@@ -97,7 +97,7 @@ export class PieChartComponent implements OnInit {
           fontWeight: "bold",
           padding: {
             top: 25,
-            right: 25,
+            right: 0,
             bottom: 10,
             left: 0
           },

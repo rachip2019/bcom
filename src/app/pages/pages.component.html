@@ -1,15 +1,15 @@
-<div class="pages-wrap">
-  <pages-top></pages-top>
+<div class="pages-wrap" [ngClass]="{'login_back':urlNoMenu.indexOf(router.url) == -1}" >
+  <pages-top *ngIf="urlNoMenu.indexOf(router.url) == -1" ></pages-top>
   <div class="pages-body">
-    <sidebar></sidebar>
+    <sidebar *ngIf="urlNoMenu.indexOf(router.url) == -1" ></sidebar>
     
-    <div class="pages-content">
+    <div class="pages-content" [ngClass]="{'login_back':urlNoMenu.indexOf(router.url) == -1}" >
       <content-top></content-top>
       <router-outlet></router-outlet>
       <notification></notification>
     </div>
 
-    <right-config></right-config>
+    <!-- <right-config></right-config> -->
   </div>
 </div>
 <loading [loading]="false"></loading>

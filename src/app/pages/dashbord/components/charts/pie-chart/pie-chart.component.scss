@@ -52,7 +52,8 @@
     top: 57px;
 }
 .form-control{
-    width: 112px;
+    width: 99px;
+    padding: 0 10px;
 }
 /deep/ ngb-datepicker.dropdown-menu{
     direction: initial;
@@ -63,7 +64,8 @@
 /deep/ .btn.btn-outline-secondary.calendar {
     background-color: white;
     color: #3e3f42;
-    width: 44px;
+    width: 32px;
+    padding: 0;
     border: 1px solid #afb7ce;
     border-radius: .25rem;
     border-top-right-radius: 0;
@@ -76,7 +78,7 @@
     position: absolute;
     font-family: 'FontAwesome';
     top: 4px;
-    left: 14px;
+    left: 8px;
     content: "\f005";
     content: "";
 }
