@@ -16,10 +16,7 @@
     min-width: 70px;
     outline: none;
     color: $fonts-color;
-<<<<<<< HEAD
     flex: 1;
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     @include center(auto, 40px);
     &::after {
         display: block;
@@ -48,7 +45,7 @@
     color: rgba($fonts-color, .4);
     cursor: not-allowed;
 }
-<<<<<<< HEAD
+
 .tabs-header button{
     border: none !important;
     font-weight: bold;
@@ -70,13 +67,7 @@
     .tabs-nav{
         background-color: #E2E2E2;
     }
-=======
 
-.tabs-wrap-default {
-    .tabs-header {
-        border: none;
-    }
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     .tabs-nav,
     .active {
         position: relative;
@@ -89,7 +80,6 @@
         border-radius: 5px 5px 0 0;
         border: 1px solid $border-color;
         border-bottom: 1px solid $card-bg;
-<<<<<<< HEAD
         background-color: white;
     }
     .done{
@@ -108,12 +98,7 @@
         border: 1px solid $table-border-color;
         height: calc(100% - 41px);
         background-color: white;
-=======
-        color: $primary;
-    }
-    .tabs-body {
-        border: 1px solid $border-color;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     }
 }
 

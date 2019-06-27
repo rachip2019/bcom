@@ -6,10 +6,8 @@ table{
 }
 .table_content{
     background-color: $backgroud; 
-<<<<<<< HEAD
     height: calc(100% - 50px);
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
 }
 table tbody tr{
     background-color: $white;
@@ -34,10 +32,8 @@ table tbody tr td:not(:first-child){
 }
 table tbody tr td:not(:last-child){
     border-left: none;
-<<<<<<< HEAD
     font-size: 16px;
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
 }
 table tr td:nth-child(1),table tr td.edit_col,table tr td.delete_col{
     width: 70px;
@@ -52,11 +48,8 @@ table tr td:nth-child(2),table tr th:nth-child(2){
     margin: 0 auto;
     background-color: $white;
     font: normal normal normal 14px/1 FontAwesome;
-<<<<<<< HEAD
     border: 1px solid #7E89B5;
     border-radius: 2px !important;
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
 .check-label:after{
     content: '\F00C';
@@ -75,15 +68,10 @@ table tr td:nth-child(2),table tr th:nth-child(2){
 }
 table td.edit_col i , table td.delete_col i{
     font-size: 25px;
-<<<<<<< HEAD
     color: $gray-icon;
 }
 .col_table{
-=======
-    color: $card-text;
-}
-.right{
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     text-align: right;
     padding-right: 25px;
 }
@@ -110,18 +98,12 @@ table td.edit_col i , table td.delete_col i{
     color: $card-text;
 }
 .table-pagination ::ng-deep .ngx-pagination .current{
-<<<<<<< HEAD
     padding: 9px 14px !important;
     border: 1px solid #001877;
     color: #001877 !important;
     font-weight: 700;
     font-size: 13px;
-=======
-    padding: 8px 14px !important;
-    border: 1px solid #001877;
-    color: #001877 !important;
-    font-weight: 700;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
 }
 .table-pagination ::ng-deep .ngx-pagination .current,.table-pagination ::ng-deep .ngx-pagination li.disabled{
     background: #ffffff94;  
@@ -132,26 +114,15 @@ table td.edit_col i , table td.delete_col i{
     font-size: 26px;
     margin-right: -4px;
     margin-left: 3px;
-<<<<<<< HEAD
     color: #a2a6b9;
-=======
-    color: #808495;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
 .table-pagination ::ng-deep .ngx-pagination .pagination-next a::after, .table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled::after{
     content: "\F104";
     font: normal normal normal 14px/1 FontAwesome; 
-<<<<<<< HEAD
     color: #a2a6b9;
     font-size: 26px;
     margin-right: 3px;
     margin-top: 0;
-=======
-    color: #808495;
-    font-size: 26px;
-    margin-right: 3px;
-    margin-top: -95px;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
     display: block !important;
 }
 .table-pagination ::ng-deep .ngx-pagination .pagination-previous a,.table-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled a,.table-pagination ::ng-deep .ngx-pagination .pagination-previous,.table-pagination ::ng-deep .ngx-pagination .pagination-previous.disabled{
@@ -160,15 +131,12 @@ table td.edit_col i , table td.delete_col i{
 .table-pagination ::ng-deep .ngx-pagination .pagination-next a,.table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled a,.table-pagination ::ng-deep .ngx-pagination .pagination-next,.table-pagination ::ng-deep .ngx-pagination .pagination-next.disabled{
     color: transparent;
 }
-<<<<<<< HEAD
 .table-pagination ::ng-deep .ngx-pagination{
     margin-bottom: 0;
 }
 .pagination-wrapper .form-group{
     margin-bottom: 0;
 }
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 .form-group.pages,.form-group.options.pages{
     display: inline-block;
     float: right;
@@ -177,10 +145,8 @@ table td.edit_col i , table td.delete_col i{
     background-color: $white;
     height: 35px;
     background-image: none;
-<<<<<<< HEAD
     color: #a2a6b9;
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
 }
 .select_page_arrow{
     background-color: $white;
@@ -188,25 +154,17 @@ table td.edit_col i , table td.delete_col i{
 }
 .select_page_arrow>i{
     font-size: 19px;
-<<<<<<< HEAD
     margin-top: 8px;
     padding-right: 7px;
     color: #a2a6b9;
-=======
-    margin-top: 7px;
-    padding-right: 7px;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
 .form-group.options.pages .input-group-sm{
     border: 1px solid #E8E9EC;
     border-radius: 3px;
 }
-<<<<<<< HEAD
 .table-pagination ::ng-deep .ngx-pagination a:hover,.table-pagination ::ng-deep  .ngx-pagination button:hover{
     background: none;
 }
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 .table-pagination ::ng-deep .ngx-pagination .pagination-previous a:hover, .table-pagination ::ng-deep .ngx-pagination .pagination-previous button:hover{
     height: 35px;
 }
@@ -215,18 +173,13 @@ table td.edit_col i , table td.delete_col i{
 }
 .table-pagination ::ng-deep ul.ngx-pagination li:not(:first-child):not(:last-child) a{
     padding: 1px 6px;
-<<<<<<< HEAD
     color: #a2a6b9;
     font-size: 13px;
     margin-top: 2px;
-=======
-    color: #808495;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
 }
 .table-pagination ::ng-deep ul.ngx-pagination li:not(:first-child):not(:last-child) span{
     padding: 0;
 }
-<<<<<<< HEAD
 .table_content card,.table_content ::ng-deep .card{
     margin-bottom: 0;
 }
@@ -252,5 +205,4 @@ table td.edit_col i , table td.delete_col i{
 .bottom_table{
     margin-top: auto;
 }
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+

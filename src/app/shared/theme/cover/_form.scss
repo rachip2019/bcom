@@ -1,6 +1,5 @@
 .form-group {
     padding: 0 10px;
-<<<<<<< HEAD
     margin-bottom: 28px;
     label {
         font-weight: bold;
@@ -8,11 +7,7 @@
         color: $card-text;
         display: block;
         text-align: right;
-=======
-    label {
-        font-weight: normal;
-        font-size: $default-text;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     }
 }
 
@@ -66,22 +61,13 @@
 }
 
 input.form-control {
-<<<<<<< HEAD
     background: white;
     border: 1px solid #A4AFB7;
     border-radius: 3px;
     @include transition(all 1s);
     &:focus {
         border: 1px solid $card-text;
-=======
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid transparent;
-    background: $border-color;
-    @include transition(all 1s);
-    &:focus {
-        border-bottom: 1px solid $primary;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     }
 }
 
@@ -122,34 +108,21 @@ textarea.form-control {
 }
 
 select.form-control {
-<<<<<<< HEAD
     background: white;
     border: 1px solid #A4AFB7;
     border-radius: 3px;
     /*appearance: none;
-=======
-    border-radius: 0;
-    border: 1px solid transparent;
-    background: $border-color;
-    appearance: none;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     -moz-appearance: none;
     background-image: url("../../assets/theme/select.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 7px) 50%;
-<<<<<<< HEAD
     background-size: 10px;*/
     padding-right: 20px;
     @include transition(border 1s);
     &:focus {
         border: 1px solid $card-text;
-=======
-    background-size: 10px;
-    padding-right: 20px;
-    @include transition(border 1s);
-    &:focus {
-        border: 1px solid $primary;
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
     }
     option {
         background: $card-bg;
@@ -395,11 +368,9 @@ checkbox && radio
     button.close {
         color: $fonts-color;
     }
-<<<<<<< HEAD
 }
 .extension_input{
     width: 50%;
     display: inline-block;
-=======
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
 }

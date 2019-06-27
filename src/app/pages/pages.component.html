@@ -1,28 +1,17 @@
-<<<<<<< HEAD
+
 <div class="pages-wrap" [ngClass]="{'login_back':urlNoMenu.indexOf(router.url) == -1}" >
   <pages-top *ngIf="urlNoMenu.indexOf(router.url) == -1" ></pages-top>
   <div class="pages-body">
     <sidebar *ngIf="urlNoMenu.indexOf(router.url) == -1" ></sidebar>
     
     <div class="pages-content" [ngClass]="{'login_back':urlNoMenu.indexOf(router.url) == -1}" >
-=======
-<div class="pages-wrap">
-  <pages-top></pages-top>
-  <div class="pages-body">
-    <sidebar></sidebar>
-    
-    <div class="pages-content">
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
+
       <content-top></content-top>
       <router-outlet></router-outlet>
       <notification></notification>
     </div>
 
-<<<<<<< HEAD
     <!-- <right-config></right-config> -->
-=======
-    <right-config></right-config>
->>>>>>> b173b67c7eb78342843fc4b8751c6d793482bb5e
   </div>
 </div>
 <loading [loading]="false"></loading>
